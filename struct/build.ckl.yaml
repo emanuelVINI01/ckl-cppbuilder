@@ -1,0 +1,9 @@
+source:
+  directories: ["src/**"] #Include subdirectories
+  excludes: ["test.cpp"]
+output:
+  directory: "output"
+  file: "test.${exec_type}" #{exec_type} will be exe, elf or app in Windows, Linux and Mac
+includes: []
+compiler: "g++.exe"
+extra_arguments: []
